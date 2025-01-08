@@ -1,0 +1,205 @@
+{
+  "compatibilityLevel": 1604,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.139.7496.1 (Main)+061188de2d27b556d0c15d8f70c4426f68783390"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DatabaseQuery\"]"
+      }
+    ],
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "annotations": [
+          {
+            "name": "PBI_IncludeFutureArtifacts",
+            "value": "False"
+          }
+        ],
+        "expression": [
+          "let",
+          "    database = Sql.Database(\"BMLM4XGIXYRETM76Q44B2O7SOM-Y3JDGB23R63EFK62ODMZSC6HSE.datawarehouse.fabric.microsoft.com\", \"03154f89-5fc4-4b2e-87eb-cbd73d2d796d\")",
+          "in",
+          "    database"
+        ],
+        "kind": "m",
+        "lineageTag": "690c527c-0f73-40c6-9319-33778ffc3385"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Addresses",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "34461c16-1f13-4386-98fe-f53df5423035",
+            "sourceColumn": "id",
+            "sourceLineageTag": "id",
+            "sourceProviderType": "varchar(16)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "location_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bc08fc5f-dfd7-4227-942b-359e1c308abc",
+            "sourceColumn": "location_id",
+            "sourceLineageTag": "location_id",
+            "sourceProviderType": "varchar(10)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "address_1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5b4b1b1e-69e1-4902-b0ff-4edd1f30adf7",
+            "sourceColumn": "address_1",
+            "sourceLineageTag": "address_1",
+            "sourceProviderType": "varchar(100)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "address_2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6022bec2-bfe8-487b-a950-302b8ba4a0a3",
+            "sourceColumn": "address_2",
+            "sourceLineageTag": "address_2",
+            "sourceProviderType": "varchar(100)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "city",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4e152ab0-07a7-4791-aed1-6975d91a29db",
+            "sourceColumn": "city",
+            "sourceLineageTag": "city",
+            "sourceProviderType": "varchar(100)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "state_province",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8cfd5b4f-b4e6-4c39-a808-9269e339fd2b",
+            "sourceColumn": "state_province",
+            "sourceLineageTag": "state_province",
+            "sourceProviderType": "varchar(100)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "postal_code",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d33152f4-9adb-4a68-9619-1f8f9e986180",
+            "sourceColumn": "postal_code",
+            "sourceLineageTag": "postal_code",
+            "sourceProviderType": "varchar(10)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9736cecd-471b-423a-87ea-5051c48fa228",
+            "sourceColumn": "country",
+            "sourceLineageTag": "country",
+            "sourceProviderType": "varchar(100)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "c717cc40-e7eb-427c-8d77-1269c1c6065e",
+        "partitions": [
+          {
+            "name": "Addresses",
+            "mode": "directLake",
+            "source": {
+              "entityName": "Addresses",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[Addresses]"
+      }
+    ]
+  }
+}
