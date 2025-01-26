@@ -1,11 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "Lakehouse",
-    "displayName": "DataflowsStagingLakehouse"
+    "type": "Reflex",
+    "displayName": "My Power BI Activator Alerts",
+    "description": "Reflex Trigger"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "dcfb6976-baaf-4daf-965f-253190419ed7"
+    "logicalId": "5de13549-4d76-ab75-4d09-a2f02fec705e"
   }
 }
